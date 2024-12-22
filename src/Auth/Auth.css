@@ -1,0 +1,11 @@
+.authform {
+  background: #7fcbb2;
+  padding: 80px;
+  border-radius: 13px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.authform{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+

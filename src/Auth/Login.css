@@ -1,0 +1,62 @@
+.loginform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  background: #7fcbb2;
+  color: rgb(0, 0, 0);
+}
+.loginsubmit {
+  width: 100%;
+  margin-top: 20px;
+}
+.logininnerform {
+  width: 100%;
+}
+
+.logininput {
+  width: 100%;
+}
+
+.loginlabel {
+  width: 100%;
+  padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 10px;
+}
+.infopara{
+  padding-top: 20px;
+  opacity: 0.7;
+}
+.infopara{
+  cursor: pointer;
+}
+.logininput{
+    border: 1px solid #252828;
+    color: #000000; /* font color*/
+    height: 35px;
+    padding-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+.logininput::placeholder {
+  color: rgb(56, 43, 43);
+  opacity: 0.2;
+}
+.error-message { color: red; margin-top: 10px; font-weight: bold; }
+
+input{
+  font-size: 20px;
+}
+.mandatory {
+  font-weight: bold;
+}
+
+.mandatory {
+  color: rgb(222, 48, 48);
+  font-weight: bold;
+}
+.h1{
+  font-family: 'Poppins';
+}

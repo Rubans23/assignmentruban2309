@@ -1,0 +1,34 @@
+.card {
+    display: block;
+    width: 470px; /* Adjust the percentage to the number of cards per row */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .color {
+    width: 100%;
+    height: 60px;
+    background-color: #D9EAFD;
+  }
+  .cardimg{
+    width: 130px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+  }
+  .cardname{
+    color: #4e636a;
+    padding-top: 10px;
+  }
+
+  .card_span{
+    padding-left: 18px;
+    font-weight: 300;
+  }
+  .carddetails{
+    padding: 17px;
+
+  }
+  

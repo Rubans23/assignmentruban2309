@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+.signupfrom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  color: rgb(0, 0, 0);
+}
+.signininnerform {
+  width: 100%;
+  margin-top: 20px;
+}
+.signinlabel {
+  width: 100%;
+  padding-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 10px;
+}
+.signininput {
+  width: 100%;
+}
+.signinsubmit {
+  width: 100%;
+  margin-top: 20px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
+.signininput{
+    border: 1px solid #252828;
+    color: #000000; /* font color*/
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+.signininput::placeholder {
+  color: rgb(56, 43, 43);
+  opacity: 0.2;
+}
+
+.radiotext{
+  margin-left: 12px;
+}
+
+.caution_text{
+  color: #2f2f3c;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.mandatory {
+  color: rgb(222, 48, 48);
+  font-weight: bold;
+}
+.h1{
+  font-family: 'Poppins';
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}

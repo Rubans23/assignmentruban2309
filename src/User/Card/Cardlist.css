@@ -1,0 +1,388 @@
+.cardlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px; /* Adjust the gap between cards as needed */
+  }
+  /*hi*/
+  .innercard{
+    position: relative;
+  }
+  .searchuser{
+    padding-top: 15px;
+  }
+
+  .button-8 {
+    width: 180px;
+    background-color: #e1ecf4;
+    border-radius: 7px;
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #39739d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  
+  .button-8:hover,
+  .button-8:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+  }
+  
+  .button-8:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+  }
+  
+  .button-8:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+  }
+
+
+  .button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #918f8b;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 10px;
+    min-width: 0;
+    outline: none;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #fff;
+    background-color: #89A8B2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .edit-card {
+    display: block; /* Hide by default */
+    position: fixed; /* Position the edit card absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for center positioning */
+    background-color: #fff; /* Background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure it's on top of other elements */
+  }
+  
+  .edit-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    width: 400px; /* Adjust width as needed */
+    max-width: 90%; /* Limit width to 90% of viewport */
+    background-color: #f8f9fa;
+  }
+  
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Add spacing between labels */
+    color: #6c757d; /* Light gray text color */
+  }
+  
+  .edit-label label {
+    margin-right: 10px;
+  }
+  
+  .edit-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 20px;
+  }
+  
+  .edit-buttons button {
+    margin-left: 10px;
+  }
+  
+  .edit-label input,
+.edit-label select {
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 3px;
+  padding: 8px;
+  margin-left: 5px;
+  color: #495057; /* Darker gray text color */
+}
+
+.edit-label select {
+  -webkit-appearance: none; /* Remove default browser styling */
+  -moz-appearance: none;
+  appearance: none;
+  width: 150px;
+  background-color: #fff; /* White background for select */
+  
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 25px; /* Adjust for dropdown arrow */
+}
+
+.edit-buttons button {
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+
+/* Container for the card list */
+.cardlist-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+}
+
+/* Search user container */
+.searchuser {
+  margin-bottom: 20px;
+}
+
+/* Form inside the search user */
+.form {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Input field inside the form */
+.form-control {
+  padding-left: 40px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+/* Icon inside the form */
+.left-pan {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ced4da;
+}
+
+/* Add User button */
+.add-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+/* Container for the card list */
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual card */
+.card {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the edit card */
+.edit-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 90%;
+  background-color: #f8f9fa;
+}
+
+/* Form inside the edit card */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label inside the edit form */
+.edit-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+.edit-label label {
+  margin-right: 10px;
+}
+
+/* Buttons inside the edit card */
+.edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.edit-buttons button {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-buttons button:hover {
+  background-color: #0069d9;
+}
+
+/* Inputs inside the edit card */
+.edit-label input,
+.edit-label select {
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  padding: 8px;
+  margin-left: 5px;
+  color: #495057;
+}
+
+/* Select inside the edit card */
+.edit-label select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 150px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 25px;
+}
+
+.button-66 {
+  background-color: #3a64a3;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button-66:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+.ribbon{
+  position: absolute;
+  rotate: -45deg;
+  top: 40px;
+  left:-35px;
+  background: #f8312f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  width: 180px;
+  padding: 5px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+

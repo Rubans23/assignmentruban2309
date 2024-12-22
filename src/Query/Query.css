@@ -1,0 +1,124 @@
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Query Form Sty */
+  .query-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid rgb(62, 215, 195);
+  }
+  
+  .query-label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .query-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100px;
+  }
+  
+  .query-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .query-button:hover {
+    background-color: #555;
+  }
+  
+  /* Comment Section Styles */
+  .comments-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .comments-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .comment {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .comment-form {
+    margin-top: 20px;
+    
+  }
+  
+  .comment-label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    
+  }
+  
+  .comment-input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .comment-button {
+    width: 100px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-button:hover {
+    background-color: #555;
+  }
+  
+  /* User Query Styles */
+  .user-query {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .query-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid rgb(62, 215, 195);
+  }
+  
+  .query-message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
